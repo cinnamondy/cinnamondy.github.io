@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 1px;
+    height: 300vh;
+    width: 100vw;
+    background-color: #f5f1dc;
+    background-attachment: fixed;
+    background-size: 30px 30px;
+    background-image: radial-gradient(circle, #006EB3 1.2px, rgba(0, 0, 0, 0) 1px);
+    font-family: 'Lora', sans-serif;
+    color: #006EB3;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    padding: 10vw 20vw 20vw 20vw;
+    text-align: center;
+    font-size: 24pt;
+    animation: appear 2s ease-in-out 1 forwards;
+    z-index: 40;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+.menubar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10;
+    position: fixed;
+    background: white;
+    border-bottom: solid 3px #006EB3;
+    z-index: 50;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list li {
+    margin-right: 40px;
+}
+
+.menu-list li:last-child {
+    margin-right: 0;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #006EB3;
+}
+
+/* .menu-list li a:hover {
+    transition: #7cb9de 0.3s ease-in-out;
+} */
+
+@keyframes appear {
+    0% {transform: translateY(-50vw);opacity:0}
+    90% {transform: translateY(0.5vw)}
+    95% {transform: translateY(-0.2vw)}
+    100% {transform: translateY(0vw);opacity: 1}
+}
