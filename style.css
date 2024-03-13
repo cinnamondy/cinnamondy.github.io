@@ -63,7 +63,7 @@ h1 {
 } */
 
 .gallery {
-    width: 100vw;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
