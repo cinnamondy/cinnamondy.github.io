@@ -6,7 +6,7 @@ body {
     background-color: #f5f1dc;
     background-attachment: fixed;
     background-size: 30px 30px;
-    background-image: radial-gradient(circle, #006EB3 1.2px, rgba(0, 0, 0, 0) 1px);
+    background-image: radial-gradient(circle, #006EB3 1px, rgba(0, 0, 0, 0) 1px);
     font-family: 'Lora', sans-serif;
     color: #006EB3;
 }
@@ -61,6 +61,21 @@ h1 {
 /* .menu-list li a:hover {
     transition: #7cb9de 0.3s ease-in-out;
 } */
+
+.gallery {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 15px;
+}
+
+.gallery_img {
+    width: 40vw;
+    object-fit: cover;
+}
+
+
 
 @keyframes appear {
     0% {transform: translateY(-50vw);opacity:0}
